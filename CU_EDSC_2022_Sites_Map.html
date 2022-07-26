@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_22a9bdabbcd50e842b38f9506c7cd60a {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_22a9bdabbcd50e842b38f9506c7cd60a" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_22a9bdabbcd50e842b38f9506c7cd60a = L.map(
+        'map_22a9bdabbcd50e842b38f9506c7cd60a', {
+        center: [40.085499999999996, -106.0095],
+        zoom: 9,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+L.control.scale().addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+
+    
+    var tile_layer_cebcbef1a3aee5329c4eb07bd74298de = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+    var tile_layer_80a9741260daaeb97176172f508baade = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+        {
+        "attribution": "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+    var tile_layer_0ff2893ddc9d68cd7af19d0c1db60e63 = L.tileLayer(
+        'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}',
+        {
+        "attribution": "https://usgs.gov",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+    var tile_layer_2ab35092d8792038a008f70e7ca123bc = L.tileLayer(
+        'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}',
+        {
+        "attribution": "https://usgs.gov/",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+    
+            var layer_control_55bd872fb714d1d9b1860a976716ff5b = {
+                base_layers : { "openstreetmap" : tile_layer_cebcbef1a3aee5329c4eb07bd74298de,"ESRI National Geographic" : tile_layer_80a9741260daaeb97176172f508baade,"USGS Topographic Imagery" : tile_layer_0ff2893ddc9d68cd7af19d0c1db60e63,"USGS Topographic Imagery (without label)" : tile_layer_2ab35092d8792038a008f70e7ca123bc, },
+                overlays : {  }
+                };
+            L.control.layers(
+                layer_control_55bd872fb714d1d9b1860a976716ff5b.base_layers,
+                layer_control_55bd872fb714d1d9b1860a976716ff5b.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+            
+                tile_layer_80a9741260daaeb97176172f508baade.remove();
+                tile_layer_0ff2893ddc9d68cd7af19d0c1db60e63.remove();
+                tile_layer_2ab35092d8792038a008f70e7ca123bc.remove();
+        
+    
+        var marker_0bda05360216d5ed8834e8d8982a9c31 = L.marker(
+            [39.54666667, -107.3308333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_ec7e8d38325ec29768991f88e601bc0d = L.AwesomeMarkers.icon({
+                    icon: 'glyphicon-tint',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0bda05360216d5ed8834e8d8982a9c31.setIcon(icon_ec7e8d38325ec29768991f88e601bc0d);
+            
+    
+            var popup_cf5079ddad02e9550fe43c8f10419ac2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1f3cf5020b71d43341922c9891540293 = $(`<div id="html_1f3cf5020b71d43341922c9891540293" style="width: 100.0%; height: 100.0%;"><a href=https://waterdata.usgs.gov/monitoring-location/09085000/#parameterCode=00065&period=P7D>Monitoring Site Link</a><br><b>Site Name:</b> Roaring Fork River at Glenwood Springs, CO<br><b>Site ID:</b>9085000<br><b>Sub Basin:</b>Roaring Fork<br><b>Latitude:</b>39.54666667<br><b>Longitude:</b>-107.3308333<br><b>Elevation:</b>5723 ft.<br><b>Reporting Since:</b>10/2/1985<br></div>`)[0];
+                popup_cf5079ddad02e9550fe43c8f10419ac2.setContent(html_1f3cf5020b71d43341922c9891540293);
+            
+
+            marker_0bda05360216d5ed8834e8d8982a9c31.bindPopup(popup_cf5079ddad02e9550fe43c8f10419ac2)
+            ;
+
+            
+        
+    
+        var marker_b28a3e567a2d1d5f3c283c5030dd514a = L.marker(
+            [40.108319, -106.0041847],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_2af88f71aad91febda4469341f3235a2 = L.AwesomeMarkers.icon({
+                    icon: 'glyphicon-tint',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b28a3e567a2d1d5f3c283c5030dd514a.setIcon(icon_2af88f71aad91febda4469341f3235a2);
+            
+    
+            var popup_5d5b3e70f83678ce1c8d6c71b9ed05ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59111a5ca2fe620298690c979be01c19 = $(`<div id="html_59111a5ca2fe620298690c979be01c19" style="width: 100.0%; height: 100.0%;"><a href=https://waterdata.usgs.gov/monitoring-location/09034250/#parameterCode=00065&period=P7D>Monitoring Site Link</a><br><b>Site Name:</b> Colorado River at Windy Gap, Near Granby, CO.<br><b>Site ID:</b>9034250<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.108319<br><b>Longitude:</b>-107.3308333<br><b>Elevation:</b>7790 ft.<br><b>Reporting Since:</b>10/1/1986<br></div>`)[0];
+                popup_5d5b3e70f83678ce1c8d6c71b9ed05ca.setContent(html_59111a5ca2fe620298690c979be01c19);
+            
+
+            marker_b28a3e567a2d1d5f3c283c5030dd514a.bindPopup(popup_5d5b3e70f83678ce1c8d6c71b9ed05ca)
+            ;
+
+            
+        
+    
+        var marker_40c9bf2e3a35a8d301881d9572f0baea = L.marker(
+            [39.083, -106.617],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_2fdd0094b9c24001cae7edb2df387b3a = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_40c9bf2e3a35a8d301881d9572f0baea.setIcon(icon_2fdd0094b9c24001cae7edb2df387b3a);
+            
+    
+            var popup_315a229d0a5fb7202fdba65fe26f6297 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3c8ca59047fdfe86445679bb55ee858f = $(`<div id="html_3c8ca59047fdfe86445679bb55ee858f" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=542&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Independence Pass<br><b>Site ID:</b>542<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>39.083<br><b>Longitude:</b>-106.617<br><b>Elevation:</b>10,598 ft.<br><b>Reporting Since:</b>10/1/1979<br></div>`)[0];
+                popup_315a229d0a5fb7202fdba65fe26f6297.setContent(html_3c8ca59047fdfe86445679bb55ee858f);
+            
+
+            marker_40c9bf2e3a35a8d301881d9572f0baea.bindPopup(popup_315a229d0a5fb7202fdba65fe26f6297)
+            ;
+
+            
+        
+    
+        var marker_03a742f9542c48b9b310490b5eccd925 = L.marker(
+            [40.23, -105.92],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_f6d7805caf8a70639946ba3da481f4fd = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_03a742f9542c48b9b310490b5eccd925.setIcon(icon_f6d7805caf8a70639946ba3da481f4fd);
+            
+    
+            var popup_17470ea728ea44ed5ce256e33f2d092f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4104004ac7f6a54298964b8f04b6cefd = $(`<div id="html_4104004ac7f6a54298964b8f04b6cefd" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=793&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Stillwater Creek<br><b>Site ID:</b>793<br><b>Sub Basin:</b>Roaring Fork<br><b>Latitude:</b>40.23<br><b>Longitude:</b>-105.92<br><b>Elevation:</b>8,880 ft<br><b>Reporting Since:</b>10/1/1985<br></div>`)[0];
+                popup_17470ea728ea44ed5ce256e33f2d092f.setContent(html_4104004ac7f6a54298964b8f04b6cefd);
+            
+
+            marker_03a742f9542c48b9b310490b5eccd925.bindPopup(popup_17470ea728ea44ed5ce256e33f2d092f)
+            ;
+
+            
+        
+    
+        var marker_f0f5df6dab1c22c630ca0a6db8485876 = L.marker(
+            [40.04, -105.75],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_0f6a909615cf66fe13b7e5500a1db781 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0f5df6dab1c22c630ca0a6db8485876.setIcon(icon_0f6a909615cf66fe13b7e5500a1db781);
+            
+    
+            var popup_e08dd023cfb90cef7597d80fefb90873 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0605ad6698fbafe28cf17afb87e7f52d = $(`<div id="html_0605ad6698fbafe28cf17afb87e7f52d" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=1187&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> High Lonesome<br><b>Site ID:</b>1187<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.04<br><b>Longitude:</b>-105.75<br><b>Elevation:</b>10,638 ft<br><b>Reporting Since:</b>7/28/2011<br></div>`)[0];
+                popup_e08dd023cfb90cef7597d80fefb90873.setContent(html_0605ad6698fbafe28cf17afb87e7f52d);
+            
+
+            marker_f0f5df6dab1c22c630ca0a6db8485876.bindPopup(popup_e08dd023cfb90cef7597d80fefb90873)
+            ;
+
+            
+        
+    
+        var marker_c3316f3ab61db8887a1c2e38a147612c = L.marker(
+            [40.41, -105.82],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_6eeed7e76a2a4f2ec731cefbce204c9b = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c3316f3ab61db8887a1c2e38a147612c.setIcon(icon_6eeed7e76a2a4f2ec731cefbce204c9b);
+            
+    
+            var popup_cff3b07efea92ded8a6afbc1779b4d21 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f3cfe97309790e03170be530d93fc33f = $(`<div id="html_f3cfe97309790e03170be530d93fc33f" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=565&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Lake Irene<br><b>Site ID:</b>565<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.41<br><b>Longitude:</b>-105.82<br><b>Elevation:</b>10,682 ft.<br><b>Reporting Since:</b>10/1/1978<br></div>`)[0];
+                popup_cff3b07efea92ded8a6afbc1779b4d21.setContent(html_f3cfe97309790e03170be530d93fc33f);
+            
+
+            marker_c3316f3ab61db8887a1c2e38a147612c.bindPopup(popup_cff3b07efea92ded8a6afbc1779b4d21)
+            ;
+
+            
+        
+    
+        var marker_48ec868a14b51744dbf5d3e3b72ed42a = L.marker(
+            [40.4, -105.85],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_f0779ba0dbcdc058bda1e24462c38cbd = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_48ec868a14b51744dbf5d3e3b72ed42a.setIcon(icon_f0779ba0dbcdc058bda1e24462c38cbd);
+            
+    
+            var popup_f1e7e9b102bd143b45fe439b01f9c8cc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eeb9422e97b4047f5476d0685a954e60 = $(`<div id="html_eeb9422e97b4047f5476d0685a954e60" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=688&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Phantom Valley<br><b>Site ID:</b>688<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.4<br><b>Longitude:</b>-105.85<br><b>Elevation:</b>9,045 ft.<br><b>Reporting Since:</b>10/1/1979<br></div>`)[0];
+                popup_f1e7e9b102bd143b45fe439b01f9c8cc.setContent(html_eeb9422e97b4047f5476d0685a954e60);
+            
+
+            marker_48ec868a14b51744dbf5d3e3b72ed42a.bindPopup(popup_f1e7e9b102bd143b45fe439b01f9c8cc)
+            ;
+
+            
+        
+    
+        var marker_e9b5b4e1a6f8efa3f62fc9973e54ebcc = L.marker(
+            [40.35, -106.1],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_f0167b2e8abf29d0724aaca563ad0c8a = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9b5b4e1a6f8efa3f62fc9973e54ebcc.setIcon(icon_f0167b2e8abf29d0724aaca563ad0c8a);
+            
+    
+            var popup_d25aabc073ab5cc845e3f901449fb765 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8a29841cd8936f7b525fb89b4d7c8f93 = $(`<div id="html_8a29841cd8936f7b525fb89b4d7c8f93" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=869&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Willow Creek Pass<br><b>Site ID:</b>869<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.35<br><b>Longitude:</b>-106.1<br><b>Elevation:</b>9,523 ft.<br><b>Reporting Since:</b>10/1/1978<br></div>`)[0];
+                popup_d25aabc073ab5cc845e3f901449fb765.setContent(html_8a29841cd8936f7b525fb89b4d7c8f93);
+            
+
+            marker_e9b5b4e1a6f8efa3f62fc9973e54ebcc.bindPopup(popup_d25aabc073ab5cc845e3f901449fb765)
+            ;
+
+            
+        
+    
+
+        var tile_layer_80dac81d3a09b5f3897ff191133e5805 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+} );
+
+        var mini_map_2ac9b29f0b7b747fe6a6b7cdde98e5dc = new L.Control.MiniMap( tile_layer_80dac81d3a09b5f3897ff191133e5805,
+         {
+  "autoToggleDisplay": false,
+  "centerFixed": false,
+  "collapsedHeight": 25,
+  "collapsedWidth": 25,
+  "height": 150,
+  "minimized": false,
+  "position": "bottomright",
+  "toggleDisplay": true,
+  "width": 150,
+  "zoomAnimation": false,
+  "zoomLevelFixed": null,
+  "zoomLevelOffset": -5
+});
+        map_22a9bdabbcd50e842b38f9506c7cd60a.addControl(mini_map_2ac9b29f0b7b747fe6a6b7cdde98e5dc);
+
+        
+    
+            L.control.fullscreen({
+                position: 'topright',
+                title: 'Enter Fullscreen',
+                titleCancel: 'Exit Fullscreen',
+                forceSeparateButton: true,
+                }).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+            map_22a9bdabbcd50e842b38f9506c7cd60a.on('enterFullscreen', function(){
+                console.log('entered fullscreen');
+            });
+
+        
+    
+        var marker_fcfc165ed1965f098c7d5096776a403f = L.marker(
+            [39.54666667, -107.3308333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_0a073eaeb5ef2c7871c3add38ecd68fe = L.AwesomeMarkers.icon({
+                    icon: 'glyphicon-tint',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fcfc165ed1965f098c7d5096776a403f.setIcon(icon_0a073eaeb5ef2c7871c3add38ecd68fe);
+            
+    
+            var popup_6da1cad05c52d10028378647e4b53396 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_da1fb2addfc54eea161e62288567b330 = $(`<div id="html_da1fb2addfc54eea161e62288567b330" style="width: 100.0%; height: 100.0%;"><a href=https://waterdata.usgs.gov/monitoring-location/09085000/#parameterCode=00065&period=P7D>Monitoring Site Link</a><br><b>Site Name:</b> Roaring Fork River at Glenwood Springs, CO<br><b>Site ID:</b>9085000<br><b>Sub Basin:</b>Roaring Fork<br><b>Latitude:</b>39.54666667<br><b>Longitude:</b>-107.3308333<br><b>Elevation:</b>5723 ft.<br><b>Reporting Since:</b>10/2/1985<br></div>`)[0];
+                popup_6da1cad05c52d10028378647e4b53396.setContent(html_da1fb2addfc54eea161e62288567b330);
+            
+
+            marker_fcfc165ed1965f098c7d5096776a403f.bindPopup(popup_6da1cad05c52d10028378647e4b53396)
+            ;
+
+            
+        
+    
+        var marker_d18eb8b641791999f4aed03eff5329e6 = L.marker(
+            [40.108319, -106.0041847],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_133a06bbac8e02860483bea0fff6910b = L.AwesomeMarkers.icon({
+                    icon: 'glyphicon-tint',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d18eb8b641791999f4aed03eff5329e6.setIcon(icon_133a06bbac8e02860483bea0fff6910b);
+            
+    
+            var popup_1fb6ae1571687f95b2df2484164d8a11 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3539ee0fb0b949aa8c2eba318481217d = $(`<div id="html_3539ee0fb0b949aa8c2eba318481217d" style="width: 100.0%; height: 100.0%;"><a href=https://waterdata.usgs.gov/monitoring-location/09034250/#parameterCode=00065&period=P7D>Monitoring Site Link</a><br><b>Site Name:</b> Colorado River at Windy Gap, Near Granby, CO.<br><b>Site ID:</b>9034250<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.108319<br><b>Longitude:</b>-107.3308333<br><b>Elevation:</b>7790 ft.<br><b>Reporting Since:</b>10/1/1986<br></div>`)[0];
+                popup_1fb6ae1571687f95b2df2484164d8a11.setContent(html_3539ee0fb0b949aa8c2eba318481217d);
+            
+
+            marker_d18eb8b641791999f4aed03eff5329e6.bindPopup(popup_1fb6ae1571687f95b2df2484164d8a11)
+            ;
+
+            
+        
+    
+        var marker_c500a8383116650e33c1015aa8e0b093 = L.marker(
+            [39.083, -106.617],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_697cfea25094c5ae2716fa4a25640778 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c500a8383116650e33c1015aa8e0b093.setIcon(icon_697cfea25094c5ae2716fa4a25640778);
+            
+    
+            var popup_d5d3469fe5bbe5f0a26a7f10797da479 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_28d1c503d00be19ca494e2a4212bcbcb = $(`<div id="html_28d1c503d00be19ca494e2a4212bcbcb" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=542&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Independence Pass<br><b>Site ID:</b>542<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>39.083<br><b>Longitude:</b>-106.617<br><b>Elevation:</b>10,598 ft.<br><b>Reporting Since:</b>10/1/1979<br></div>`)[0];
+                popup_d5d3469fe5bbe5f0a26a7f10797da479.setContent(html_28d1c503d00be19ca494e2a4212bcbcb);
+            
+
+            marker_c500a8383116650e33c1015aa8e0b093.bindPopup(popup_d5d3469fe5bbe5f0a26a7f10797da479)
+            ;
+
+            
+        
+    
+        var marker_49ff0c8313acd78ffa399da928e09abe = L.marker(
+            [40.23, -105.92],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_4dd2b0c39bb14d549f4ab9f4295908b4 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_49ff0c8313acd78ffa399da928e09abe.setIcon(icon_4dd2b0c39bb14d549f4ab9f4295908b4);
+            
+    
+            var popup_45f63f4e58cc8c630dcbd1f3161d5641 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eb88e7dcf3f71a72602c350332104204 = $(`<div id="html_eb88e7dcf3f71a72602c350332104204" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=793&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Stillwater Creek<br><b>Site ID:</b>793<br><b>Sub Basin:</b>Roaring Fork<br><b>Latitude:</b>40.23<br><b>Longitude:</b>-105.92<br><b>Elevation:</b>8,880 ft<br><b>Reporting Since:</b>10/1/1985<br></div>`)[0];
+                popup_45f63f4e58cc8c630dcbd1f3161d5641.setContent(html_eb88e7dcf3f71a72602c350332104204);
+            
+
+            marker_49ff0c8313acd78ffa399da928e09abe.bindPopup(popup_45f63f4e58cc8c630dcbd1f3161d5641)
+            ;
+
+            
+        
+    
+        var marker_0eaf727d98e7463d685704b46db01eaf = L.marker(
+            [40.04, -105.75],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_efec21244b8805643f31ef18d3b7dc67 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0eaf727d98e7463d685704b46db01eaf.setIcon(icon_efec21244b8805643f31ef18d3b7dc67);
+            
+    
+            var popup_dea9e9ea1d6af3fc6cc64daa1a68fc52 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d4f3b67062ad275ee51ae374a817c34 = $(`<div id="html_5d4f3b67062ad275ee51ae374a817c34" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=1187&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> High Lonesome<br><b>Site ID:</b>1187<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.04<br><b>Longitude:</b>-105.75<br><b>Elevation:</b>10,638 ft<br><b>Reporting Since:</b>7/28/2011<br></div>`)[0];
+                popup_dea9e9ea1d6af3fc6cc64daa1a68fc52.setContent(html_5d4f3b67062ad275ee51ae374a817c34);
+            
+
+            marker_0eaf727d98e7463d685704b46db01eaf.bindPopup(popup_dea9e9ea1d6af3fc6cc64daa1a68fc52)
+            ;
+
+            
+        
+    
+        var marker_5d3cb62d2fe4ae6356a935ade0a8c04d = L.marker(
+            [40.41, -105.82],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_3cd2864a1baf1696c2dc6190db5ec3d2 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d3cb62d2fe4ae6356a935ade0a8c04d.setIcon(icon_3cd2864a1baf1696c2dc6190db5ec3d2);
+            
+    
+            var popup_b5642665676c33e5185b74b6ff8dbb4f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c9d02176b346616a0f8b34b486a84591 = $(`<div id="html_c9d02176b346616a0f8b34b486a84591" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=565&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Lake Irene<br><b>Site ID:</b>565<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.41<br><b>Longitude:</b>-105.82<br><b>Elevation:</b>10,682 ft.<br><b>Reporting Since:</b>10/1/1978<br></div>`)[0];
+                popup_b5642665676c33e5185b74b6ff8dbb4f.setContent(html_c9d02176b346616a0f8b34b486a84591);
+            
+
+            marker_5d3cb62d2fe4ae6356a935ade0a8c04d.bindPopup(popup_b5642665676c33e5185b74b6ff8dbb4f)
+            ;
+
+            
+        
+    
+        var marker_8792a98c1f5dbe64bfe649832dccdd20 = L.marker(
+            [40.4, -105.85],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_a01a04502dbff8dd8dec98fa78f253f9 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8792a98c1f5dbe64bfe649832dccdd20.setIcon(icon_a01a04502dbff8dd8dec98fa78f253f9);
+            
+    
+            var popup_ca990481a68b83e71c31307598fa1da0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6fbbb50552f3b2b4095bfdfe937007c8 = $(`<div id="html_6fbbb50552f3b2b4095bfdfe937007c8" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=688&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Phantom Valley<br><b>Site ID:</b>688<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.4<br><b>Longitude:</b>-105.85<br><b>Elevation:</b>9,045 ft.<br><b>Reporting Since:</b>10/1/1979<br></div>`)[0];
+                popup_ca990481a68b83e71c31307598fa1da0.setContent(html_6fbbb50552f3b2b4095bfdfe937007c8);
+            
+
+            marker_8792a98c1f5dbe64bfe649832dccdd20.bindPopup(popup_ca990481a68b83e71c31307598fa1da0)
+            ;
+
+            
+        
+    
+        var marker_0c6e1d62636972a0f815c152c59be823 = L.marker(
+            [40.35, -106.1],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_2d069a396b0d39b90e05bfb808117f6a = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c6e1d62636972a0f815c152c59be823.setIcon(icon_2d069a396b0d39b90e05bfb808117f6a);
+            
+    
+            var popup_acdbe5b5e365d874870332b78cb1a3ee = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1d26780347ee3abdf714e5ab62a2e26b = $(`<div id="html_1d26780347ee3abdf714e5ab62a2e26b" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=869&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Willow Creek Pass<br><b>Site ID:</b>869<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.35<br><b>Longitude:</b>-106.1<br><b>Elevation:</b>9,523 ft.<br><b>Reporting Since:</b>10/1/1978<br></div>`)[0];
+                popup_acdbe5b5e365d874870332b78cb1a3ee.setContent(html_1d26780347ee3abdf714e5ab62a2e26b);
+            
+
+            marker_0c6e1d62636972a0f815c152c59be823.bindPopup(popup_acdbe5b5e365d874870332b78cb1a3ee)
+            ;
+
+            
+        
+    
+
+        var tile_layer_4a7578244a18884f5022efb875f17de7 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+} );
+
+        var mini_map_94d71e7f79d38849a785fcc3458078cb = new L.Control.MiniMap( tile_layer_4a7578244a18884f5022efb875f17de7,
+         {
+  "autoToggleDisplay": false,
+  "centerFixed": false,
+  "collapsedHeight": 25,
+  "collapsedWidth": 25,
+  "height": 150,
+  "minimized": false,
+  "position": "bottomright",
+  "toggleDisplay": true,
+  "width": 150,
+  "zoomAnimation": false,
+  "zoomLevelFixed": null,
+  "zoomLevelOffset": -5
+});
+        map_22a9bdabbcd50e842b38f9506c7cd60a.addControl(mini_map_94d71e7f79d38849a785fcc3458078cb);
+
+        
+    
+            L.control.fullscreen({
+                position: 'topright',
+                title: 'Enter Fullscreen',
+                titleCancel: 'Exit Fullscreen',
+                forceSeparateButton: true,
+                }).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+            map_22a9bdabbcd50e842b38f9506c7cd60a.on('enterFullscreen', function(){
+                console.log('entered fullscreen');
+            });
+
+        
+    
+        var marker_7d088d2d567901fb62e6689b5e4d3e64 = L.marker(
+            [39.54666667, -107.3308333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_0e9dfd48f1907c425e1799c04f8a51f7 = L.AwesomeMarkers.icon({
+                    icon: 'glyphicon-tint',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d088d2d567901fb62e6689b5e4d3e64.setIcon(icon_0e9dfd48f1907c425e1799c04f8a51f7);
+            
+    
+            var popup_a4ea25e9483eccafb7f7c9f2dfb59251 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a056c318b764b2de2bfcf1f9fc42b1b0 = $(`<div id="html_a056c318b764b2de2bfcf1f9fc42b1b0" style="width: 100.0%; height: 100.0%;"><a href=https://waterdata.usgs.gov/monitoring-location/09085000/#parameterCode=00065&period=P7D>Monitoring Site Link</a><br><b>Site Name:</b> Roaring Fork River at Glenwood Springs, CO<br><b>Site ID:</b>9085000<br><b>Sub Basin:</b>Roaring Fork<br><b>Latitude:</b>39.54666667<br><b>Longitude:</b>-107.3308333<br><b>Elevation:</b>5723 ft.<br><b>Reporting Since:</b>10/2/1985<br></div>`)[0];
+                popup_a4ea25e9483eccafb7f7c9f2dfb59251.setContent(html_a056c318b764b2de2bfcf1f9fc42b1b0);
+            
+
+            marker_7d088d2d567901fb62e6689b5e4d3e64.bindPopup(popup_a4ea25e9483eccafb7f7c9f2dfb59251)
+            ;
+
+            
+        
+    
+        var marker_d0c4dd7afe72df2ed189eab9ce581fd7 = L.marker(
+            [40.108319, -106.0041847],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_de33a3341ebe19886d7bf417de805918 = L.AwesomeMarkers.icon({
+                    icon: 'glyphicon-tint',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d0c4dd7afe72df2ed189eab9ce581fd7.setIcon(icon_de33a3341ebe19886d7bf417de805918);
+            
+    
+            var popup_9ee9a2ed001f7875b48153816e358136 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d55399122c780de1d70d10c64fdf5c5f = $(`<div id="html_d55399122c780de1d70d10c64fdf5c5f" style="width: 100.0%; height: 100.0%;"><a href=https://waterdata.usgs.gov/monitoring-location/09034250/#parameterCode=00065&period=P7D>Monitoring Site Link</a><br><b>Site Name:</b> Colorado River at Windy Gap, Near Granby, CO.<br><b>Site ID:</b>9034250<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.108319<br><b>Longitude:</b>-107.3308333<br><b>Elevation:</b>7790 ft.<br><b>Reporting Since:</b>10/1/1986<br></div>`)[0];
+                popup_9ee9a2ed001f7875b48153816e358136.setContent(html_d55399122c780de1d70d10c64fdf5c5f);
+            
+
+            marker_d0c4dd7afe72df2ed189eab9ce581fd7.bindPopup(popup_9ee9a2ed001f7875b48153816e358136)
+            ;
+
+            
+        
+    
+        var marker_c2fe53ab21478a72c855794cd225911b = L.marker(
+            [39.083, -106.617],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_03348c112d2bb7c174c2ee5ff9213769 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c2fe53ab21478a72c855794cd225911b.setIcon(icon_03348c112d2bb7c174c2ee5ff9213769);
+            
+    
+            var popup_1bf89ca29ff0dfdcf3c50f9b99889765 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_341ae255770f870be247d8267538bc6d = $(`<div id="html_341ae255770f870be247d8267538bc6d" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=542&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Independence Pass<br><b>Site ID:</b>542<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>39.083<br><b>Longitude:</b>-106.617<br><b>Elevation:</b>10,598 ft.<br><b>Reporting Since:</b>10/1/1979<br></div>`)[0];
+                popup_1bf89ca29ff0dfdcf3c50f9b99889765.setContent(html_341ae255770f870be247d8267538bc6d);
+            
+
+            marker_c2fe53ab21478a72c855794cd225911b.bindPopup(popup_1bf89ca29ff0dfdcf3c50f9b99889765)
+            ;
+
+            
+        
+    
+        var marker_db83297fb8eb5481c1818a140056073a = L.marker(
+            [40.23, -105.92],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_ebf1eb2af3da680b7b6a19e499c70a10 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_db83297fb8eb5481c1818a140056073a.setIcon(icon_ebf1eb2af3da680b7b6a19e499c70a10);
+            
+    
+            var popup_92b244c5454c330d77c070c587c62579 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_26316fec513c81f02277d4ea09bbf94d = $(`<div id="html_26316fec513c81f02277d4ea09bbf94d" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=793&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Stillwater Creek<br><b>Site ID:</b>793<br><b>Sub Basin:</b>Roaring Fork<br><b>Latitude:</b>40.23<br><b>Longitude:</b>-105.92<br><b>Elevation:</b>8,880 ft<br><b>Reporting Since:</b>10/1/1985<br></div>`)[0];
+                popup_92b244c5454c330d77c070c587c62579.setContent(html_26316fec513c81f02277d4ea09bbf94d);
+            
+
+            marker_db83297fb8eb5481c1818a140056073a.bindPopup(popup_92b244c5454c330d77c070c587c62579)
+            ;
+
+            
+        
+    
+        var marker_ecd8af4de7614faa59b7249744a0b7be = L.marker(
+            [40.04, -105.75],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_061034c7cacab8980e768980d1a2d133 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ecd8af4de7614faa59b7249744a0b7be.setIcon(icon_061034c7cacab8980e768980d1a2d133);
+            
+    
+            var popup_61ed5ba51d1e172557d72876b14da7ae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e816c8887cc0d9a580deee91f0803124 = $(`<div id="html_e816c8887cc0d9a580deee91f0803124" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=1187&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> High Lonesome<br><b>Site ID:</b>1187<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.04<br><b>Longitude:</b>-105.75<br><b>Elevation:</b>10,638 ft<br><b>Reporting Since:</b>7/28/2011<br></div>`)[0];
+                popup_61ed5ba51d1e172557d72876b14da7ae.setContent(html_e816c8887cc0d9a580deee91f0803124);
+            
+
+            marker_ecd8af4de7614faa59b7249744a0b7be.bindPopup(popup_61ed5ba51d1e172557d72876b14da7ae)
+            ;
+
+            
+        
+    
+        var marker_0235d98083be80bfc5a9d0929f6816a8 = L.marker(
+            [40.41, -105.82],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_be04ea35a3d650d105faf761a9dff37f = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0235d98083be80bfc5a9d0929f6816a8.setIcon(icon_be04ea35a3d650d105faf761a9dff37f);
+            
+    
+            var popup_83ac170ed0fb6c45b17710fd005b0d98 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_571b72a481440386f5427dfd9823e0a8 = $(`<div id="html_571b72a481440386f5427dfd9823e0a8" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=565&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Lake Irene<br><b>Site ID:</b>565<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.41<br><b>Longitude:</b>-105.82<br><b>Elevation:</b>10,682 ft.<br><b>Reporting Since:</b>10/1/1978<br></div>`)[0];
+                popup_83ac170ed0fb6c45b17710fd005b0d98.setContent(html_571b72a481440386f5427dfd9823e0a8);
+            
+
+            marker_0235d98083be80bfc5a9d0929f6816a8.bindPopup(popup_83ac170ed0fb6c45b17710fd005b0d98)
+            ;
+
+            
+        
+    
+        var marker_59eba78c82a4b58a0bddb3b8e274fb89 = L.marker(
+            [40.4, -105.85],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_a72600f37e64c8c8cf3a761d632948fc = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59eba78c82a4b58a0bddb3b8e274fb89.setIcon(icon_a72600f37e64c8c8cf3a761d632948fc);
+            
+    
+            var popup_8dba28f342ab3777e8693176f9cd45b5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_914013b3ba44bbe25140fba376083fe4 = $(`<div id="html_914013b3ba44bbe25140fba376083fe4" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=688&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Phantom Valley<br><b>Site ID:</b>688<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.4<br><b>Longitude:</b>-105.85<br><b>Elevation:</b>9,045 ft.<br><b>Reporting Since:</b>10/1/1979<br></div>`)[0];
+                popup_8dba28f342ab3777e8693176f9cd45b5.setContent(html_914013b3ba44bbe25140fba376083fe4);
+            
+
+            marker_59eba78c82a4b58a0bddb3b8e274fb89.bindPopup(popup_8dba28f342ab3777e8693176f9cd45b5)
+            ;
+
+            
+        
+    
+        var marker_a8b11ed4b238b9c50130740ed05409f2 = L.marker(
+            [40.35, -106.1],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+        
+    
+
+                var icon_11e329877e37c7ed17f4ecd9420c5c00 = L.AwesomeMarkers.icon({
+                    icon: 'dashboard',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a8b11ed4b238b9c50130740ed05409f2.setIcon(icon_11e329877e37c7ed17f4ecd9420c5c00);
+            
+    
+            var popup_fbaf2240e5043664b967bcdc0a349c74 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_415f60576badddbe6a666d3c43c03260 = $(`<div id="html_415f60576badddbe6a666d3c43c03260" style="width: 100.0%; height: 100.0%;"><a href=https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=869&state=CO>Monitoring Site Link</a><br><b>Site Name:</b> Willow Creek Pass<br><b>Site ID:</b>869<br><b>Sub Basin:</b>Colorado Headwaters<br><b>Latitude:</b>40.35<br><b>Longitude:</b>-106.1<br><b>Elevation:</b>9,523 ft.<br><b>Reporting Since:</b>10/1/1978<br></div>`)[0];
+                popup_fbaf2240e5043664b967bcdc0a349c74.setContent(html_415f60576badddbe6a666d3c43c03260);
+            
+
+            marker_a8b11ed4b238b9c50130740ed05409f2.bindPopup(popup_fbaf2240e5043664b967bcdc0a349c74)
+            ;
+
+            
+        
+    
+
+        var tile_layer_b7755d8c694e02b9fa3df82274279987 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+} );
+
+        var mini_map_f7c6af1e3a032c17426b649eb6d8aa5e = new L.Control.MiniMap( tile_layer_b7755d8c694e02b9fa3df82274279987,
+         {
+  "autoToggleDisplay": false,
+  "centerFixed": false,
+  "collapsedHeight": 25,
+  "collapsedWidth": 25,
+  "height": 150,
+  "minimized": false,
+  "position": "bottomright",
+  "toggleDisplay": true,
+  "width": 150,
+  "zoomAnimation": false,
+  "zoomLevelFixed": null,
+  "zoomLevelOffset": -5
+});
+        map_22a9bdabbcd50e842b38f9506c7cd60a.addControl(mini_map_f7c6af1e3a032c17426b649eb6d8aa5e);
+
+        
+    
+            L.control.fullscreen({
+                position: 'topright',
+                title: 'Enter Fullscreen',
+                titleCancel: 'Exit Fullscreen',
+                forceSeparateButton: true,
+                }).addTo(map_22a9bdabbcd50e842b38f9506c7cd60a);
+            map_22a9bdabbcd50e842b38f9506c7cd60a.on('enterFullscreen', function(){
+                console.log('entered fullscreen');
+            });
+
+        
+</script>
